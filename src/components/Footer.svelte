@@ -15,3 +15,14 @@
 		<Form />
 	</div>
 </footer>
+
+<style>
+	footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 50%);
+    backdrop-filter: blur(5px);
+}
+</style>

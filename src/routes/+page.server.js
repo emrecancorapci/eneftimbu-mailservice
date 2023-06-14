@@ -14,6 +14,7 @@ export const actions = {
     default: async ({request}) => {
         const data = await request.formData();
         if(data === undefined || data == {}) return;
+
         const email = data.get('email');
 
         main(email)

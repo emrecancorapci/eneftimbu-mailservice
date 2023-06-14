@@ -23,14 +23,6 @@ body {
             rgba(61, 139, 0, 100%) 100%);
 }
 
-.root {
-    position: relative;
-    min-height: 100vh;
-
-    background: rgb(20, 20, 20);
-    background: linear-gradient(180deg, rgba(15, 15, 15, 1) 0%, rgba(20, 20, 20, 0.95) 30%, rgba(20, 20, 20, 0.85) 75%, rgba(20, 20, 20, 0.7) 100%);
-}
-
 a {
     color: inherit;
     text-decoration: none !important;
@@ -38,6 +30,7 @@ a {
 
 button {
     box-sizing: border-box;
+    transition: all 0.1s ease-out;
 
     display: flex;
     flex-direction: row;
@@ -54,31 +47,19 @@ button {
     color: #09D9D4;
     font-family: 'Chivo';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
 }
 
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 50%);
-    backdrop-filter: blur(5px);
+button:hover {
+    background: #09D9D4;
+    border-color: #09D9D4;
+    color: #071314;
 }
 
-.ghost {
-    height: 15vh;
-}
-
-.email-bar {
-    height: 48px;
-    max-width: 600px;
-    min-width: 400px;
-}
-
-.subs-button {
-    width: 96px;
-    margin-left: -128px;
+button:active {
+    background: white;
+    border-color: white;
+    color: #071314;
 }

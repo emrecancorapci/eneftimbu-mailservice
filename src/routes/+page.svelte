@@ -1,10 +1,7 @@
 <script>
 	import Footer from '../components/Footer.svelte';
 	import Links from '../components/Links.svelte';
-	import Logo from '../components/Logo.svelte';
 	import Main from '../components/Main.svelte';
-
-	export const prerender = true;
 </script>
 
 <div class="container-fluid root text-white">
@@ -14,7 +11,7 @@
 				<header>
 					<div class="row justify-content-center m-4">
 						<div class="col-auto">
-							<Logo />
+							<img src="svg/logo.svg" alt="logo" class="img-fluid" />
 						</div>
 					</div>
 					<div class="row my-2 justify-content-center">
@@ -34,4 +31,25 @@
 	</div>
 </div>
 <Footer />
+
 <!-- Hi stranger :) -->
+
+<style>
+	.ghost {
+		height: 15vh;
+	}
+
+	.root {
+		position: relative;
+		min-height: 100vh;
+
+		background: rgb(20, 20, 20);
+		background: linear-gradient(
+			180deg,
+			rgba(15, 15, 15, 1) 0%,
+			rgba(20, 20, 20, 0.95) 30%,
+			rgba(20, 20, 20, 0.85) 75%,
+			rgba(20, 20, 20, 0.7) 100%
+		);
+	}
+</style>
